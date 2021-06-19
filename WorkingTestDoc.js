@@ -21,4 +21,5 @@ console.log(2 * '2e15')
 
 console.log(100 % 5 === 0 ? "100 is divisible by 5" : "100 is not divisible by 5")
 
-f
+let x = 1
+
