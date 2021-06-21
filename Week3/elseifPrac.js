@@ -1,11 +1,4 @@
-function trueOrFalse(wasThatTrue) {
-    if (wasThatTrue) {
-        return "yup";
-    }
-    return "nope";
-}
 
-console.log(trueOrFalse(false));
 
 function sizePicker(num) {
     if (num < 5) {
