@@ -1,5 +1,5 @@
 //testing switch statements--WHY does this code not work?????
-//FIXED: I had a answer: "first" instead of answer = "first"--d'oh!
+//FIXED: I had answer: "first" instead of answer = "first"--d'oh!
 
 function myTestSwitch(num) {
     var answer = "";
