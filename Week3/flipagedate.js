@@ -33,3 +33,12 @@ function ageCalc(num) {
 console.log(ageCalc(57)) //To flip it you could simply divide the`num` variable by`secInYr`
 
 //console.log(ageCalc(57))
+
+function ageCalc(num) {
+    let date = new Date(1992, 05, 12, 3, 14);
+
+    let ageInMilliSec = Date.now() - date;
+
+    return ageInMillisec
+}
+console.log(ageCalc)
