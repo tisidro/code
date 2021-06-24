@@ -21,10 +21,11 @@ function poemLine(lineNumber) {
         return lineNumber + " potato,"
     }
 }
+let lineNumber = 1
 
-
-let i = 1;
-while (i <= 8) {
-    console.log(poemLine(i));
-    i = i + 1;
+while (lineNumber <= 8) {
+    console.log(poemLine(lineNumber));
+    lineNumber = lineNumber + 1;
 }
+
+
