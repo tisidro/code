@@ -37,6 +37,7 @@ console.log(people)
 
 
 //what would be the output here??
+//I said undefined if var name = "John" is below console.log b/c it hasn't seen it yet. But for the 2nd console log it will log "changed name John" because it's looking at what's in the function and that's all defined
 
 var name = "Simran";
 
