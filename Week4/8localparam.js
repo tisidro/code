@@ -20,7 +20,7 @@ alpha();//alice
 function beta() {
     let fName = "Bob";
 
-    console.log(fName);//bob
+    console.log(fName);//bob 
 }
-console.log(fName);//alice
+console.log(fName);//alice b/c it's out of the previous block. let is block scoped and so is const
 
