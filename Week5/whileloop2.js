@@ -1,13 +1,4 @@
 
-var cars = ["mercedes", "bmw", "tesla"];
-
-var num = 0;
-
-while (cars < cars.length) {
-    console.log(cars[num]);
-    num++;
-
-}
 
 /*should log:
 mercedes
@@ -16,3 +7,11 @@ tesla
 
 but my code does nothing! (see below)
 */
+
+var randomStuff = ["lam", "bmw", "tesla"]
+
+var num = 0
+while (num <= randomStuff.length - 1) {
+    console.log(randomStuff[num]);
+    num++
+}
