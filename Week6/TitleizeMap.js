@@ -1,38 +1,36 @@
-/*Titleize
-Write a function that:
-
-accepts a string as an argument
-splits apart the words in the string
-capitalizes each word
-returns a string with the first letter of each word capitalized 
-e.g.
-titilize("all dogs are good dogs") // => "All Dogs Are Good Dogs"
-titilize("eveRY green bus drives fAst") // => "Every Green Bus Drives Fast"
-titilize("FRIDAY IS THE LONGEST DAY") // => "Friday Is The Longest Day"*/
 
 //first you have to split up the string into an array (split a string into an array of substrings, and returns the new array)
 
+let words = "the rain in spain falls mainly on the plain"
 
+function capitalize(word) {
+    letFirstLetter = word[0];
+    let resOfWord = word.slice(1);
 
-function titilize(string) {
-    let wordArray = string.split(" ")
-
-    //next you use .map on the array to call the provided function once for each element in an array, in order.
-
-    //also need a function that will return first letter of word to upper case and then slice at 2nd character or (1) to return the rest of the word in lowercase (extracts a section of a string and returns it as a new string, without modifying the original string.)
-
-    let newArray = wordArray.map(function capitalize(word) {
-        return word[0].toUpperCase() + word.slice(1).toLowerCase()
-
-    });
-
-    //this creates a new array that applies the function to the entire array in order (titlizing). the function capitalize is called by putting it in () after .map 
-
-    return newArray.join(" ");
-
-    //then you need to take this new array and apply .join (creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas)
-
+    return firstLetter.toUpperCase() + restOfWord.toLowerCase();
 }
-console.log(titilize("HEY THERE HELLO"))
 
-console.log(titilize("all dogs are good dogs"))
+
+wordsArray = words.split(" ")//splitting on space
+
+
+let capitalize = wordsArray.map(capitalize);
+//oldCapitalize("the") => "The"
+
+let joinedString = capitalized.join(" ");
+
+console.log(joinedString);
+
+//now it will print as string with first letter capitalized
+
+//extension  - instead of uppercase first letter of each word, instead don't uppercase words with 2 chars
+
+/*add if (word.length < 3){
+    return word.toLowerCase();
+}
+
+let firstLetter = word[0];
+letrestOfWord = word.slice (1);
+return firstLetter.toUpperCase() + restOfWord.toLowerCase();}
+
+console.log words.split()*/
