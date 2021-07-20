@@ -22,6 +22,8 @@ for (let state in states) {
 
 for (let state in states) {
     console.log(state + " is short for", states[state])
+
+    console.log(`${state} is short for: ${states[state]}`)
 }
 
 //or object.keys takes in object and get out object's keys see file 13a
