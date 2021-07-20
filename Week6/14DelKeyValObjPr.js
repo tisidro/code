@@ -4,12 +4,10 @@ states = {
     NY: 'New York'
 }
 
-{ CA: 'California', MA: 'Massachusetts', NY: 'New York' }
+// CA: 'California', MA: 'Massachusetts', NY: 'New York' 
 
 delete states.MA
 
-true
+console.log(states)
 
-states
-
-{ CA: 'California', NY: 'New York' }
+//CA: 'California', NY: 'New York' }
