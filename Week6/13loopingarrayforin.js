@@ -21,9 +21,14 @@ for (let state in states) {
 //or
 
 for (let state in states) {
-    console.log(state + " is short for", states[state])
 
-    console.log(`${state} is short for: ${states[state]}`)
+    if (states.hasOwnProperty(state)) { //looks at only this property of the object not other properties flying around in the code -- properties you didn't expect-- that can screw up for in loop
+        //if there were other properties added this guards
+
+        console.log(state + " is short for", states[state])
+
+        console.log(`${state} is short for: ${states[state]}`)
+    }
 }
 
 //or object.keys takes in object and get out object's keys see file 13a
