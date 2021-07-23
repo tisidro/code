@@ -11,14 +11,13 @@ let grades = {
 }
 
 function gpa() {
-    let total = 0;
-    for (let score in grades) {
-        total = total + grades / grades.length
+
+    for (score in grades) {
+        grades[score] / Object.keys(grades).length
     }
 
-    return total;
 }
 
+return console.log('The GPA is ' + gpa(grades));
 
-console.log('The GPA is ' + gpa());
 
