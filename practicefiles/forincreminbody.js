@@ -1,12 +1,4 @@
 
-const myData = [
-    "vermont",
-    "iowa",
-    "ohio",
-    1950,
-    "Terri",
-];
-
 var i = 0;
 
 for (; ;) {
