@@ -1,3 +1,13 @@
+/*async function start(){
+    let order = [];
+    let customerOrder = await ask("Welcome to the Good Burger.  Home of the Good Burger!! \n Can I take your order? ");
+    order = customerOrder.split(" ");
+    console.log(order);
+    
+}
+*/
+//gather answers from person, put them into separate variables and pass to object constructor, call new and object you want to make. Also can use an array and array destructuring (look it up)
+
 const readline = require('readline');
 const rl = readline.createInterface(process.stdin, process.stdout);
 
