@@ -5,7 +5,7 @@ const user = {
     purchases: ["glasses", "notebook", "pens"],
 
     sayName: function () {
-        console.log(this.name);
+        console.log(this.name);//when you do this.key you will get the value on the object
     }
 }
 user.sayName(); //return Terri
