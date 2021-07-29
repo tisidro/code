@@ -22,26 +22,27 @@ class StopLight {
         if (this.canChangeTo(newColor)) {
             this.color = newColor;
         } else {
-            throw "Invalid state transition attempted - from " + this.color + " to " + newColor;
+            console.log(`Invalid state transition attempted - from  ${this.color} to ${newColor}`)
+            //alternative - throw "Invalid state transition attempted - from " + this.color + " to " + newColor;
         }
     }
 
 
-    canChangeTo() {
+    canChangeTo(newColor) {
         let validTransitions = {
             green: ["yellow"],
             yellow: ["red"],
             red: ["green"]
         }
-        let allowed = validTransitions[this.color]
+        let allowed = validTransitions[this.color];
         if (allowed.includes(newColor)) {
-            return true
+            return true;
         }
         else {
             /*throw {
                 "invalid State transition attempted from " + this.color + " to " + newColor*/
             return false;
-        };
+        }
     }
 }
 
