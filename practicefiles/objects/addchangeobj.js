@@ -10,9 +10,11 @@ states = {
 //add states to object
 states.WY = "Wyoming"
 states.ME = "Maine"
+states['FL'] = "Florida"  //don't forget to add quotes in brackets!!
 
 console.log(states)
 
 states.WY = "Just some state"//changes WY value
+states['FL'] = "The sunshine state"
 
 console.log(states)
