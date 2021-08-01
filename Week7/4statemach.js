@@ -17,6 +17,23 @@ class StopLight {
         //this.color = color || "green"; code above makes it more robust
 
     }
+    class StopLight {
+    constructor(color) {
+
+        let validColors = ["red", "green", "yellow"];
+
+        if (validColors.includes(color)) {
+            this.color = color;
+
+        }
+        else {
+            this.color = "green";
+        }
+
+        //this.color = color || "green"; code above makes it more robust
+
+    }
+
 
     enterState(newColor) {
         if (this.canChangeTo(newColor)) {

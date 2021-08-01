@@ -8,5 +8,6 @@ function getRandCat(array) {
 }
 console.log(getRandCat(cats))
 
-//Math.floor -
-//Math.random() - picks # between 0 and 1, inclusive of zero but exclusive of 1 (so mult by arr.length gives you the actual length)
+//Math.floor() - rounds decimal down
+//Math.ceil() - rounds decimal up
+//Math.random() - picks # between 0 and 1 (not including 1)that will be a long decimal #
