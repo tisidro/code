@@ -1,4 +1,4 @@
-let results = [
+let library = [
     {
         title: "A Wizard of Earthsea",
         tags: ['fantasy', 'ursula k. le guin']
@@ -35,8 +35,7 @@ let results = [
 
 function search(item) {
 
-
-    let result = results.filter(word => {
+    let result = library.filter(word => {
         return word.tags.includes(item);
     });
 
@@ -44,4 +43,10 @@ function search(item) {
 
 };
 
+console.log("these are fantasy results: ");
+
 search("fantasy");
+
+console.log("these are science results: ");
+
+search("science");
