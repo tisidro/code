@@ -44,24 +44,6 @@ let library = [
     }
 ];
 
-/*function search(item) {
-
-    let result = library.filter(word => {
-        return word.tags.includes(item);
-    });
-
-    console.log(result);
-
-};
-
-console.log("these are fantasy results: ");
-
-search("fantasy");
-
-console.log("these are science results: ");
-
-search("science");*/
-
 
 async function search() {
     let tag = await ask("What are you filtering for? ");

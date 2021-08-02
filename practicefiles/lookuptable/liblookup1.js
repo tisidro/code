@@ -1,4 +1,4 @@
-let results = [
+let books = [
     {
         title: "A Wizard of Earthsea",
         tags: ['fantasy', 'ursula k. le guin']
@@ -32,17 +32,20 @@ let results = [
         tags: ["programming", "technology", "marijn haverbeke"]
     }
 ];
-(word) => {
-    function tagIncludes(word) {
-        word.tag.includes(word);
-    };
-
-    function search(item) {
-        let result = results.filter(tagIncludes);
 
 
-        console.log(results)
-    }
-}
+function search(item) {
+    //function to look up an item based on its tags
+
+    let result = books.filter(word => {
+        return word.tags.includes(item);
+    })
+
+    console.log(result);
+
+};
+
+
+
 search("fantasy");
 search("science fiction");
