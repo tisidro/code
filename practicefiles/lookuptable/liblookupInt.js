@@ -1,3 +1,14 @@
+//interactive version of the library lookup!
+
+const readline = require('readline');
+const rl = readline.createInterface(process.stdin, process.stdout);
+
+function ask(questionText) {
+    return new Promise((resolve, reject) => {
+        rl.question(questionText, resolve);
+    });
+}
+
 let library = [
     {
         title: "A Wizard of Earthsea",
@@ -33,7 +44,7 @@ let library = [
     }
 ];
 
-function search(item) {
+/*function search(item) {
 
     let result = library.filter(word => {
         return word.tags.includes(item);
@@ -49,4 +60,25 @@ search("fantasy");
 
 console.log("these are science results: ");
 
-search("science");
+search("science");*/
+
+
+async function search() {
+    let tag = await ask("What are you filtering for? ");
+
+    function tagPrinter(obj) {
+        let objTags = obj.tags;
+        let objTitles = obj.title;
+
+        if (objTags.includes(tag)) {
+            return objTitles;
+        }
+    }
+
+    let booksTagged = library.filter(tagPrinter).map(tagPrinter);
+
+    console.log(booksTagged)
+    process.exit()
+}
+
+search();
