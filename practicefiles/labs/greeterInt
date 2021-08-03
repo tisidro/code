@@ -1,0 +1,37 @@
+const readline = require('readline');
+const rl = readline.createInterface(process.stdin, process.stdout);
+
+function ask(questionText) {
+    return new Promise((resolve, reject) => {
+        rl.question(questionText, resolve);
+    });
+}
+
+start();
+
+function greeter(name) {
+    let sanName = name.otLowerCase().trim();
+    let properName = capitalize(sanName);
+    let enemies = ["darth", "sauran", "atuan"]
+
+    if (enemies.find(enemy => name === enemy)) {
+        console.log("OMG you are an enemy!");
+    }
+    else {
+        console.log(`Hello, ${properName}!`);
+    }
+}
+
+asynch function sayHello() {
+    let userName = await ask("What is your name? ")
+
+    while (userName !== "bye!") {
+        greeter(userName)
+
+        userName = await ask("...nice to meet you!")
+    }
+    console.log("Goodbye!")
+    process.exit()
+}
+
+sayHello()
