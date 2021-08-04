@@ -1,5 +1,7 @@
 let order = process.argv.slice(2)
 
+//DON'T FORGET! WHEN YOU USE PROCESS.ARG YOU NEED TO TYPE IN YOUR INPUTS ON COMMAND LINE AFTER FILENAME!
+
 //waits for the argument from the command line, slices off the node and order.js to clean
 
 let menu = {
