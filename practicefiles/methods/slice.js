@@ -13,7 +13,7 @@ console.log(str)
 
 //adding slice, this will slice between the 1st letter and the 4th--showing the first 4 characters. REMEMBER, THE COUNT STARTS AT ZERO
 
-var str2 = str.slice(0, 4)
+var str2 = str.slice(0, 10)
 
 console.log(str2)//hence this shows "cats"
 
