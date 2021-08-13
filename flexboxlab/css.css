@@ -1,0 +1,52 @@
+.wrapper{
+    width: 100%;
+    max-width: 960 px;
+    margin: 0 auto;
+}
+
+.flex-container{
+   display: flex;
+}
+
+.box{
+    height: 100px;
+    min-width: 100px;
+}
+
+.one{
+    background-color: gold;
+    flex-grow: 2;
+
+}
+
+.two{
+    background-color: orange;
+    flex-grow: 2;
+}
+
+.three{
+    background-color: red;
+    flex-grow: 1;
+}
+
+.four{
+    background-color: grey;
+    flex-grow: 0;
+}
+
+.five{
+    background-color: lightgray;
+    flex-grow: 0;
+}
+
+  
+/*.container {
+    height: 80px;
+    width:800px;
+justify-content: center;
+align-items: center;
+    display: flex;
+    flex-direction:row;*/
+    
+    
+}  

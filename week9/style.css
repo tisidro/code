@@ -1,0 +1,17 @@
+h1 {color:red
+
+}
+
+h4 {color:rgb(25, 0, 255)
+
+}
+
+img:hover{
+
+transform: scale(1.2, 1.2)
+}
+
+.caption {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,51 @@
+
+.flex-container{  
+    display: flex;
+    width: 875px;  
+   padding-right: 20px;
+   padding-left: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background:lightgray;
+   justify-content: flex-start;
+}
+
+.box{
+    height: 100px;
+    line-height: 100px;
+    min-width: 100px;
+    text-align: center;
+  
+}
+
+.one{
+background-color: #F29D0B;    
+flex-grow: 3;
+
+
+}
+
+.two{
+    background-color: #D55307;
+    flex-grow: 3;
+}
+
+.three{
+    background-color: #C1392B;
+    flex-grow: 2;
+  
+}
+
+.four{
+    background-color: #C2C7CB;
+    flex-grow: 1;
+}
+    
+
+.five{
+    background-color: #848C8F;
+    flex-grow: 1;
+    
+
+    
+}  

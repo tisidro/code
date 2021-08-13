@@ -1,0 +1,27 @@
+.block {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 10px;
+    border: 2px solid black;
+    float: inline-end;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .yellow {
+    background-color: yellow;
+    clear: left;
+  }
+  
+  .green {
+    background-color: green;
+    clear: left;
+  }
+  
