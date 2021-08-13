@@ -1,4 +1,11 @@
-//working with slice method
+//slice() is a method used to cut up strings. Can take one or two inputs
+//Count starts at zero in a string.
+
+//slice is "cut from" if you have one number. It shows only what's after that number
+//slice is "cut between" and it shows ony what's between those numbers
+
+//slice(2) cuts everything up to 2nd character
+//slice(1,2) cuts out everything except what's between 1 and 2 in the string
 
 var str = "Cats rule!"
 
