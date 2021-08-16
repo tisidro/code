@@ -22,3 +22,4 @@ if (myString2.indexOf("fun") > 0) {
 else {
     console.log("This string has no fun in it.")
 }
+
