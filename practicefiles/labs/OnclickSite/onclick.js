@@ -15,3 +15,14 @@ button.onclick = function () {
         button.innerHTML = "Show Less";
     }
 };
+
+var myMessage = document.getElementById("message");
+
+function showMessage() {
+    myMessage.className = "show";
+}
+
+//timer to call function after certain time using setTimeout
+
+setTimeout(showMessage, 3000);
+
