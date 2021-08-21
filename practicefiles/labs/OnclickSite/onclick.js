@@ -20,7 +20,7 @@ let myMessage = document.getElementById("message");
 
 function showMessage() {
     myMessage.className = "show";
-}
+};
 
 //timer to call function after certain time using setTimeout
 
@@ -40,7 +40,16 @@ function changeColor() {
 
     colorChanger.style.background = colors[counter];
     counter++;
-}
+};
 
-setInterval(changeColor, 2000)//calls the changeColor function every 3000 ms or 3 sec
 
+let myTimer = setInterval(changeColor, 2000);
+
+colorChanger.onclick = function () {
+
+    //code to stop interval
+    clearInterval(myTimer);
+    colorChanger.innerHTML = "Timer Stopped";
+};
+
+//setInterval(changeColor, 2000)calls the changeColor function every 3000 ms or 3 sec use this instead of let myTimer = statement above if you want it to just keep cycling with no click to stop
