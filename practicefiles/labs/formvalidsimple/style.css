@@ -1,0 +1,16 @@
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+    
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(238, 232, 232);
+    border-radius: 4px;
+    background-color: #3CBC8D;
+    color: white;
+  }

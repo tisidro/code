@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Simple Form Validation</title>
+</head>
+
+<body>
+    <p>
+        Just a simple form validator that uses onsubmit to allow us to check w/ an if statement if there is any content in the form field or not.
+
+        If not, it won't send it to the server but will prompt user for input.
+
+        If so, it returns a blank string and sends the info to the server.
+    </p>
+
+    <form id="my-form" name="myForm" action="#">
+
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <div id="message" style="color: white;"></div>
+
+    <script src="formval.js"></script>
+</body>
+
+</html>
