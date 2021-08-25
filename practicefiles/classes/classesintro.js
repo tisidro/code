@@ -1,4 +1,4 @@
-//classes are used with constructor functions and the new keyword to create multiple objects more easily--automates it!
+//classes are used with constructor functions and the new keyword to create multiple objects with properties more easily--automates it!
 
 //this creates the class, notice that the name of the class is Capitalized!
 
