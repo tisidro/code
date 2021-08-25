@@ -31,7 +31,11 @@ class Admin extends User {
         users = users.filter(u => {
             return u.email != user.email;
         })
-        //this returns true if email input for deleteUser is not = email for users, otherwise returns false and doesn't delete it
+
+        //“filter” is a function that cycles through all items in the array and removes them if one of those items returns false. 
+        //UserTwo will be examined through all the users in the array of users and if UserTwo matches with UserTwo, it will return FALSE and Filter function deletes UserTwo. 
+        //Others users don’t match (u.email not equal to user.email is TRUE) so they are kept.
+
     }
 }
 
